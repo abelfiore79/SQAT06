@@ -4,8 +4,8 @@ const options = {desiredCapabilities: {browserName: 'firefox'}};
 const browser = webdriverio.remote(options);
 
 const password = "Hello2theWorld";
-const specialty = "Medical Resident";
-const specificSpecialty = "Dermatology Resident";
+const specialty = "Medical";
+const specificSpecialty = "Dermatology";
 
 "use strict";
 
@@ -69,7 +69,7 @@ browser
        }) 
     
     // click the submit button
-    .click('register-page__submit-button')
+    .click('.register-page__submit-button')
     // capture an error
     .catch(function(err){
         console.log(err)
