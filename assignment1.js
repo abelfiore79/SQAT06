@@ -4,8 +4,8 @@ const options = {desiredCapabilities: {browserName: 'firefox'}};
 const browser = webdriverio.remote(options);
 
 const password = "Hello2theWorld";
-const specialty = "Medical";
-const specificSpecialty = "Dermatology";
+const job = "Dentistry";
+const specificJob = "Endodontist";
 
 "use strict";
 
@@ -48,14 +48,14 @@ browser
        }) 
        
     // choose a Specialty
-    .addValue('.register-page__specialties-list', specialty )
+    .addValue('.register-page__specialties-list', job )
     // capture an error
     .catch(function(err){
         console.log(err)
        })
 
     // choose a Specific Specialty
-    .addValue('.register-page__specialties-other-list', specificSpecialty )
+    .addValue('.register-page__specialties-other-list', specificJob )
     // capture an error
     .catch(function(err){
         console.log(err)

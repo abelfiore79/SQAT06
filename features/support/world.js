@@ -10,9 +10,23 @@ class CustomWorld {
     this.attach = attach;
   }
 
-  goToWebsite() {
-    return this.browser.init().url('https://duckduckgo.com/');
+  password(){ 
+    return 'Hello2all';
+    }
+
+  specialty(){
+    return "Dentistry";
   }
+    
+  specific(){
+    return "Orthodontist";
+  }
+    
+  randomString(){
+      return Math.random().toString(36).substring(7);
+  }
+    
 }
+
 
 setWorldConstructor(CustomWorld)
